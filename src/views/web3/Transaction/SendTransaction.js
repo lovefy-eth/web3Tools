@@ -16,7 +16,7 @@ export function SendTransactionShow() {
     )
   }
 
-  return <div>请先连接钱包,兄弟！</div>
+  return <div>请先连接钱包,兄弟！合并测试</div>
 }
 
 export function SendTransaction() {
