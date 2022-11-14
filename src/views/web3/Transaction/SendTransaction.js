@@ -2,7 +2,7 @@ import * as React from 'react'
 import { useDebounce } from 'use-debounce'
 import { usePrepareSendTransaction, useSendTransaction, useWaitForTransaction } from 'wagmi'
 import { parseEther } from 'ethers/lib/utils'
-import { useAccount, useConnect, useDisconnect } from 'wagmi'
+import { useAccount } from 'wagmi'
 
 export function SendTransactionShow() {
   const { isConnected } = useAccount()
@@ -16,7 +16,7 @@ export function SendTransactionShow() {
     )
   }
 
-  return <div>请先连接钱包</div>
+  return <div>请先连接钱包,兄弟！</div>
 }
 
 export function SendTransaction() {
