@@ -6,6 +6,7 @@ const Typography = React.lazy(() => import('./views/theme/typography/Typography'
 
 // Web3
 const SendTransaction = React.lazy(() => import('./views/web3/Transaction/SendTransaction'))
+const BatchTransaction = React.lazy(() => import('./views/web3/BatchTransaction/BatchTransaction'))
 
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
@@ -61,6 +62,7 @@ const routes = [
   { path: '/theme/typography', name: 'Typography', element: Typography },
   { path: '/web3', name: 'WEB3', element: SendTransaction, exact: true },
   { path: '/web3/send-transaction', name: 'SendTransaction', element: SendTransaction },
+  { path: '/web3/batch-transaction', name: 'BatchTransaction', element: BatchTransaction },
   { path: '/base', name: 'Base', element: Cards, exact: true },
   { path: '/base/accordion', name: 'Accordion', element: Accordion },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', element: Breadcrumbs },

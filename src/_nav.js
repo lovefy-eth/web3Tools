@@ -57,6 +57,11 @@ const _nav = [
         name: 'SendTransaction',
         to: '/web3/send-transaction',
       },
+      {
+        component: CNavItem,
+        name: 'batchTransaction',
+        to: '/web3/batch-transaction',
+      },
     ],
   },
   {

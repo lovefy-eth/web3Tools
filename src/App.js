@@ -46,7 +46,7 @@ const BSCChain: Chain = {
 
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum, BSCChain],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()],
+  [alchemyProvider({ apiKey: '_lAjJzOkMp60K6UXjxaQ1TEaylqv3UNy' }), publicProvider()],
 )
 
 const { connectors } = getDefaultWallets({

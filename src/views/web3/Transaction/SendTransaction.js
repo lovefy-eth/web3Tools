@@ -20,16 +20,18 @@ export function SendTransactionShow() {
 }
 
 export function SendTransaction() {
+  const { address } = useAccount()
+
   const [to, setTo] = React.useState('')
   const [debouncedTo] = useDebounce(to, 500)
 
   const [amount, setAmount] = React.useState('')
-  //const [debouncedValue] = useDebounce(value, 500)
+  const [debouncedValue] = useDebounce(amount, 500)
 
   const { config } = usePrepareSendTransaction({
     request: {
       to: debouncedTo,
-      value: amount ? parseEther(amount) : undefined,
+      value: debouncedValue ? parseEther(debouncedValue) : undefined,
     },
   })
   const { data, sendTransaction } = useSendTransaction(config)
@@ -45,6 +47,7 @@ export function SendTransaction() {
         sendTransaction?.()
       }}
     >
+      <div>From:{address}</div>
       <input
         aria-label="Recipient"
         onChange={(e) => setTo(e.target.value)}
