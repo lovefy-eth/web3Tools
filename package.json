@@ -45,7 +45,8 @@
     "simplebar-react": "^2.4.1",
     "use-debounce": "^8.0.4",
     "wagmi": "^0.7.15",
-    "web3": "^1.8.0"
+    "web3": "^1.8.0",
+    "web3-core-requestmanager": "^1.8.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
